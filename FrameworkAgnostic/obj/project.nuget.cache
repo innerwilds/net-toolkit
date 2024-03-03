@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "kE9K+c4h9S13Ljo6A7fW5LFNpqbGFQhv0jcJFPCU3MpD/l2rOEz8WLff6wZaquGKqNSGdi9QmBz5gBxJGb7QSQ==",
+  "dgSpecHash": "wQ5tLmbhl0iXbkh+ETcTXiv6K2tIToDydPU9hFJ+Bc8pSDq+hVJEgRU54slKI+GTHOob6HymgehHjzpfzSLsoA==",
   "success": true,
   "projectFilePath": "E:\\UIToolkit.WPF\\FrameworkAgnostic\\FrameworkAgnostic.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\cyrel\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\cyrel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\cyrel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
