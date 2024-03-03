@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Threading.Tasks;
 
 namespace FrameworkAgnostic.Input.Interfaces;
 

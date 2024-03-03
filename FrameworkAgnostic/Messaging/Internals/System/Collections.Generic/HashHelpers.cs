@@ -1,3 +1,4 @@
+using System;
 using System.Runtime.CompilerServices;
 
 namespace FrameworkAgnostic.Messaging.Internals.System.Collections.Generic;

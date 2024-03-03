@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
@@ -6,7 +8,7 @@ using System.Runtime.CompilerServices;
 namespace FrameworkAgnostic.Messaging.Internals.System.Collections.Generic;
 
 /// <summary>
-///     A specialized <see cref="Dictionary{TKey, TValue}" /> implementation to be used with messenger types.
+///     A specialized <see cref="Dictionary{TKey,TValue}" /> implementation to be used with messenger types.
 /// </summary>
 /// <typeparam name="TKey">The type of keys in the dictionary.</typeparam>
 /// <typeparam name="TValue">The type of values in the dictionary.</typeparam>

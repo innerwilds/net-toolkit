@@ -1,3 +1,5 @@
+using System.Threading.Tasks;
+
 namespace FrameworkAgnostic.Input.Interfaces;
 
 /// <summary>

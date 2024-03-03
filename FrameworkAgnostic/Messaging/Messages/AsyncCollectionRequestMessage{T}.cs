@@ -1,4 +1,8 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Threading;
+using System.Threading.Tasks;
 using ArgumentNullException = FrameworkAgnostic.Properties.Polyfills.ArgumentNullException;
 
 #pragma warning disable CA1001
@@ -19,9 +23,9 @@ public class AsyncCollectionRequestMessage<T> : IAsyncEnumerable<T>
     private readonly CancellationTokenSource cancellationTokenSource = new();
 
     /// <summary>
-    ///     The collection of received replies. We accept both <see cref="Task{TResult}" /> instance, representing already
+    ///     The collection of received replies. We accept both <see cref="Task" /> instance, representing already
     ///     running
-    ///     operations that can be executed in parallel, or <see cref="Func{T,TResult}" /> instances, which can be used so that
+    ///     operations that can be executed in parallel, or <see cref="Func{TResult}" /> instances, which can be used so that
     ///     multiple
     ///     asynchronous operations are only started sequentially from <see cref="GetAsyncEnumerator" /> and do not overlap in
     ///     time.

@@ -1,3 +1,4 @@
+using System;
 using System.Runtime.CompilerServices;
 
 namespace FrameworkAgnostic.Messaging.Internals;
@@ -6,7 +7,7 @@ namespace FrameworkAgnostic.Messaging.Internals;
 ///     A simple type representing an immutable pair of types.
 /// </summary>
 /// <remarks>
-///     This type replaces a simple <see cref="ValueTuple{T1,T2}" /> as it's faster in its
+///     This type replaces a simple <see cref="ValueTuple" /> as it's faster in its
 ///     <see cref="GetHashCode" /> and <see cref="IEquatable{T}.Equals(T)" /> methods, and because
 ///     unlike a value tuple it exposes its fields as immutable. Additionally, the
 ///     <see cref="TMessage" /> and <see cref="TToken" /> fields provide additional clarity reading

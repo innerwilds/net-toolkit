@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using FrameworkAgnostic.Messaging;
@@ -186,7 +188,7 @@ public abstract class ObservableRecipient : ObservableObject
     ///     Compares the current and new values for a given property. If the value has changed,
     ///     raises the <see cref="ObservableObject.PropertyChanging" /> event, updates the property with
     ///     the new value, then raises the <see cref="ObservableObject.PropertyChanged" /> event. Similarly to
-    ///     the <see cref="ObservableObject.SetProperty{T}(T,T,Action{T},string)" /> method, this overload should only be
+    ///     the <see cref="ObservableObject.SetProperty{T}(T,T,Action,string)" /> method, this overload should only be
     ///     used when <see cref="ObservableObject.SetProperty{T}(ref T,T,string)" /> can't be used directly.
     /// </summary>
     /// <typeparam name="T">The type of the property that changed.</typeparam>

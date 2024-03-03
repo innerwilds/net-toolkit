@@ -1,3 +1,5 @@
+using System;
+
 namespace FrameworkAgnostic.Messaging.Internals.System.Collections.Generic;
 
 /// <summary>

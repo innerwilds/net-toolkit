@@ -1,6 +1,7 @@
 // This file is inspired from the MvvmLight library (lbugnion/MvvmLight),
 // more info in ThirdPartyNotices.txt in the root of the project.
 
+using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using FrameworkAgnostic.Input.Interfaces;

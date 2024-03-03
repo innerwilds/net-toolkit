@@ -1,6 +1,9 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using FrameworkAgnostic.ComponentModel.__Internals;
 using FrameworkAgnostic.Properties;
 using ArgumentNullException = FrameworkAgnostic.Properties.Polyfills.ArgumentNullException;
@@ -137,7 +140,7 @@ public abstract class ObservableObject : INotifyPropertyChanged, INotifyProperty
     ///     should only be used when the former is not viable (eg. when the target property being
     ///     updated does not directly expose a backing field that can be passed by reference).
     ///     For performance reasons, it is recommended to use a stateful callback if possible through
-    ///     the <see cref="SetProperty{TModel,T}(T,T,TModel,Action{TModel,T},string?)" /> whenever possible
+    ///     the <see cref="SetProperty{TModel,T}(T,T,TModel,Action,string?)" /> whenever possible
     ///     instead of this overload, as that will allow the C# compiler to cache the input callback and
     ///     reduce the memory allocations. More info on that overload are available in the related XML
     ///     docs. This overload is here for completeness and in cases where that is not applicable.

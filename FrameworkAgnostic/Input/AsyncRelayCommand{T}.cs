@@ -1,5 +1,8 @@
+using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Threading;
+using System.Threading.Tasks;
 using FrameworkAgnostic.ComponentModel.__Internals;
 using FrameworkAgnostic.Input.Interfaces;
 using FrameworkAgnostic.Input.Internals;
@@ -16,7 +19,7 @@ namespace FrameworkAgnostic.Input;
 public sealed class AsyncRelayCommand<T> : IAsyncRelayCommand<T>, ICancellationAwareCommand
 {
     /// <summary>
-    ///     The cancelable <see cref="Func{T1,T2,TResult}" /> to invoke when <see cref="Execute(object?)" /> is used.
+    ///     The cancelable <see cref="Func{TResult}" /> to invoke when <see cref="Execute(object?)" /> is used.
     /// </summary>
     private readonly Func<T?, CancellationToken, Task>? cancelableExecute;
 

@@ -1,3 +1,5 @@
+using System;
+
 namespace FrameworkAgnostic.ComponentModel.Attributes;
 
 /// <summary>

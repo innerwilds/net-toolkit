@@ -1,3 +1,5 @@
-﻿namespace FrameworkAgnostic.Navigation;
+﻿using System;
+
+namespace FrameworkAgnostic.Navigation;
 
 public record HistoryMessage(string FrameName, Type PageType);
